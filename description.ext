@@ -1,0 +1,27 @@
+saving = 0;
+disabledAI = 1;
+joinUnassigned = 0;
+briefing = 0;
+debriefing = 0;
+
+
+//enableDebugConsole[] = {"76561198004390157"};
+enableDebugConsole = 2;
+/*
+enableDebugConsole Usage:
+0 - Default behavior, available only in editor
+1 - Available in SP and for hosts / logged in admins in MP
+2 - Available for everyone
+Alternatively, enter a players Steam UID to allow only them.
+*/
+
+
+
+onLoadMission = __EVAL(selectRandom ["<t color='#FFffff'>Did you know?<br />Your mother and Slay has been having an affair behind your fathers back for several years now! Sorry this had to be the way you found out!"]);
+
+author = "Slay No More";
+onLoadName = "Slay's Basic Character Saving";
+
+
+
+onPauseScript = "scripts\save.sqf"; //starts the script which saves on the pause screen.
